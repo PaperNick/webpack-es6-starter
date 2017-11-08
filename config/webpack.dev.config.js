@@ -12,7 +12,7 @@ config.output = {
 
 config.devServer = {
   port: 3000,
-  contentBase: '../src',
+  contentBase: path.join(__dirname, '..',  'src'),
   hot: true,
   stats: { colors: true },
   inline: true,
