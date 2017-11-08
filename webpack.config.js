@@ -29,8 +29,16 @@ module.exports = {
         use: 'babel-loader',
       },
       {
+        test: /\.html$/,
+        use: ['raw-loader']
+      },
+      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({ use: ['css-loader'] })
+      },
+      {
+        test: /\.json$/,
+        use: ['json-loader']
       },
     ]
   },
