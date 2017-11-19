@@ -44,10 +44,6 @@ module.exports = {
         use: ExtractTextPlugin.extract({ use: ['css-loader'] })
       },
       {
-        test: /\.json$/,
-        use: ['json-loader']
-      },
-      {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
         use: [
           {
