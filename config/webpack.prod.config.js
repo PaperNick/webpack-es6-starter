@@ -18,7 +18,6 @@ config.plugins = config.plugins.concat([
   new webpack.optimize.UglifyJsPlugin({
     // Set sourceMap to true if you would like to debug on production
     sourceMap: false,
-
     compress: {
       warnings: true
     }
