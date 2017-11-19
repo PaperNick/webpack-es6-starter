@@ -30,7 +30,14 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: ['raw-loader']
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              attrs: ['img:src']
+            }
+          }
+        ]
       },
       {
         test: /\.css$/,
@@ -40,6 +47,14 @@ module.exports = {
         test: /\.json$/,
         use: ['json-loader']
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        use: ['url-loader']
+      },
+      {
+        test: /\.(woff|woff2|ttf|eot)$/,
+        use: ['url-loader']
+      }
     ]
   },
   plugins: [
