@@ -21,7 +21,7 @@ npm install
 ```
 npm start
 ```
-- You can open [localhost:3000](http://localhost:8080/) in your browser, once the compilation has been completed.
+- You can open [localhost:3000](http://localhost:3000/) in your browser, once the compilation has been completed.
 
 ## Run Webpack production build
 ```
