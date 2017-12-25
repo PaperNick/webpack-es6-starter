@@ -1,11 +1,11 @@
-class Home {
+class HomeComponent {
   constructor(salutation) {
     this.salutation = salutation;
   }
 
-  greet() {
+  render() {
     return `${this.salutation} You are using Webpack 3 with Babel ES6!`;
   }
 }
 
-export default Home;
+export default HomeComponent;

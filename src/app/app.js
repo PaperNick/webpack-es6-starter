@@ -1,5 +1,5 @@
 import 'src/assets/styles/main.css';
-import Home from './home/home.component';
+import HomeComponent from './home/home.component';
 
-let home = new Home('Hello world!');
-document.querySelector('.main').innerHTML = home.greet();
+let homeComponent = new HomeComponent('Hello world!');
+document.querySelector('.main').innerHTML = homeComponent.render();
