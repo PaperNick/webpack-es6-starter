@@ -1,4 +1,9 @@
-# Webpack 3 Babel ES6 starter
+https://webpack.js.org/guides/getting-started/#basic-setup
+https://webpack.js.org/migrate/4
+https://github.com/postcss/autoprefixer#webpack
+
+
+# Webpack 4 Babel ES6 starter
 
 Simple skeleton which provides preconfigured setup using Webpack 3 with Babel ES6 and auto-reloading development server.
 

@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const commonConfig = require('../webpack.config');
 
 module.exports = webpackMerge(commonConfig, {
+  mode: 'development',
   output: {
     filename: '[name].[hash].bundle.js',
     path: path.resolve(__dirname, '..', 'src')
@@ -33,7 +34,7 @@ module.exports = webpackMerge(commonConfig, {
   plugins: [
     new ExtractTextPlugin('[name].[hash].css'),
 
-      // Enables Webpack's Hot Module Replacement (HMR).
-      new webpack.HotModuleReplacementPlugin()
+    // Enables Webpack's Hot Module Replacement (HMR).
+    new webpack.HotModuleReplacementPlugin()
   ]
 });

@@ -7,6 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const commonConfig = require('../webpack.config');
 
 module.exports = webpackMerge(commonConfig, {
+  mode: 'production',
   output: {
     filename: 'assets/js/[name].[chunkhash].bundle.js',
     publicPath: '/',
